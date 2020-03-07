@@ -1,0 +1,78 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container nav ul 
+{
+    list-style-type: none;
+}
+
+.container nav ul li 
+{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.container nav ul li a 
+{
+    text-decoration: none;
+    color: #2d3436;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .5s all ease-in-out;
+    /* padding: 10px; */
+    position: relative;
+}
+
+/* hover change color and font-size */
+/* .container nav ul li a:hover
+{
+    color: red;
+    font-size: 19px;
+}
+.container nav ul li a:active
+{
+    color: green;
+    font-size: 20px;
+} */
+
+/* hover appear background-color */
+
+/* .container nav ul li a:hover
+{
+    background: pink;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} */
+
+/* hover appear before a tag */
+
+.container nav ul li a::before
+{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: greenyellow;
+    /* transform: translateX(-50%); */
+    transition: .5s all ease-in-out;
+}
+
+.container nav ul li a:hover::before
+{
+    width: 50px;
+}
